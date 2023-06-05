@@ -1,0 +1,29 @@
+{
+  "name": "bird-brain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
+    "dev": "nodemon server/index.js"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3"
+  }
+}
