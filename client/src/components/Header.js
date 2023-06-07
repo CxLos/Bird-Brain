@@ -38,7 +38,7 @@ function Header() {
         setLoggedIn(true);
       };
     };
-  }) ;
+  },[]);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

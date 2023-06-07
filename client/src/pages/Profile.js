@@ -1,9 +1,9 @@
 import { Container, Box, Avatar, Grid, Typography } from "@mui/material";
 import { useTheme, ThemeProvider } from "@mui/material/styles";
 // import { useEffect, useState } from 'react';
-import { useQuery } from "@apollo/client";
-import ProfileNoteCard from "../components/ProfileNoteCard";
-import { QUERY_POST } from "../utils/queries";
+// import { useQuery } from "@apollo/client";
+// import ProfileNoteCard from "../components/ProfileNoteCard";
+// import { QUERY_POST } from "../utils/queries";
 
 function Profile() {
   // const [posts, setPosts] = useState(null);

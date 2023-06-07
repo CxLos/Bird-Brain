@@ -54,7 +54,7 @@ export default function SignUp() {
 
     try {
       const { data } = await AddUser({
-        variables: { ... formState },
+        variables: { ...formState },
         // variables: { name: formState.name, email: formState.email, password: formState.password },
       });
 
