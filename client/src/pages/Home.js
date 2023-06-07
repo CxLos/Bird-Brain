@@ -36,7 +36,7 @@ import Auth from '../utils/auth';
 
 export default function PostCard() {
 
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
   const [loggedIn, setLoggedIn] = React.useState(false);
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
@@ -51,11 +51,11 @@ export default function PostCard() {
         setLoggedIn(true);
       }
     }
-  });
+  }, []);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
 
   return (
 
