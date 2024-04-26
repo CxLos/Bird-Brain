@@ -58,10 +58,25 @@ export default function SignUp() {
         // variables: { name: formState.name, email: formState.email, password: formState.password },
       });
 
+// -------- ORIGINAL WAY -------------------------------
+
+    //   Auth.login(data.addUser.token);
+    // } catch (e) {
+    //   console.error(e);
+    // }
+
+// --------------------------------------------------------------------------------------
+
+    if (data && data.addUser && data.addUser.token) {
       Auth.login(data.addUser.token);
-    } catch (e) {
-      console.error(e);
+      console.log('Token logged in successfully:', data.addUser.token);
+    } else {
+      console.error('Token not found in response:', data);
     }
+  } catch (error) {
+    console.error('Error during user registration:', error);
+    // You can also set an error state to display a message to the user
+  }
   };
 
   return (
@@ -99,7 +114,7 @@ export default function SignUp() {
                     required
                     fullWidth
                     id="name"
-                    label="Name"
+                    label="name"
                     autoFocus
                     onChange={handleChange}
                   />
@@ -119,7 +134,7 @@ export default function SignUp() {
                     required
                     fullWidth
                     id="email"
-                    label="Email"
+                    label="email"
                     name="email"
                     autoComplete="email"
                     onChange={handleChange}

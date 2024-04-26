@@ -18,7 +18,7 @@ To install the Bird Brain application, start by cloning the repository. Once you
 
 ## Usage
 
-[Bird Brain](https://birdbrain.herokuapp.com/)
+[Bird Brain](https://cxlos-bird-brain.herokuapp.com/signup)
 
 ![Bird Brain image 1](./client/public/assets/images/bird-brain-1.png)
 ![Bird Brain image 2](./client/public/assets/images/bird-brain-2.png)

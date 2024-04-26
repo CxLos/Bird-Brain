@@ -77,3 +77,11 @@ mongoose.connection.on('error', (err) => {
 
 module.exports = mongoose.connection;
 // module.exports = connectWithDB.connection;
+
+// Run this code in the Heroku cli to retrieve the IP addresses:
+// $ nslookup cxlos-bird-brain.herokuapp.com
+// Addresses:  
+//           54.159.116.102
+//           54.165.58.209
+//           18.208.60.216
+//           52.5.82.174

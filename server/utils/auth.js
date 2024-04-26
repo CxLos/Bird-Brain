@@ -39,4 +39,33 @@ module.exports = {
         const payload = { name, email, _id };
         return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
     },
+
+    // ------------------------------------------------------------------------
+
+  //   authMiddleware: function ({ req }) {
+  //     let token = req.body.token || req.query.token || req.headers.authorization;
+  
+  //     if (req.headers.authorization) {
+  //         token = token.split(' ').pop().trim();
+  //     }
+  
+  //     console.log("Received token:", token);
+  
+  //     if (!token) {
+  //         console.log('No token found.');
+  //         return req;
+  //     }
+  
+  //     try {
+  //         const decoded = jwt.verify(token, secret);
+  //         console.log('Decoded token:', decoded);
+  //         req.user = decoded.data; // Assuming your token payload has a 'data' field with user information
+  //         console.log('User:', req.user);
+  //     } catch (error) {
+  //         console.error('Token verification failed:', error.message);
+  //     }
+  
+  //     return req;
+  // },
+  
 }
